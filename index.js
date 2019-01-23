@@ -7,7 +7,7 @@ const client = new Discord.Client();
 var prefix = "csat!";
 
 //Login + connexion du bot :
-client.login();
+client.login(process.env.TOKEN);
 
 client.on("ready", () => {
     console.log("Connexion en cours ...");
